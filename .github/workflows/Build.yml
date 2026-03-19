@@ -53,7 +53,8 @@ jobs:
                       --enable-tools \
                       --disable-capstone \
                       -Ddebug=false \
-                      -Doptimization=3
+                      -Doptimization=3 \
+                      --extra-cflags="-Wno-error=array-bounds"
 
       - name: Build QEMU
         run: |
