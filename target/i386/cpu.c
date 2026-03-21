@@ -3555,7 +3555,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_8000_0001_ECX] =
             CPUID_EXT3_LAHF_LM | CPUID_EXT3_SVM,
         .xlevel = 0x8000000A,
-        .model_id = "QEMU Virtual CPU version " QEMU_HW_VERSION,
+        .model_id = "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz ",
     },
     {
         .name = "phenom",
@@ -3670,7 +3670,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
              VMX_CPU_BASED_UNCOND_IO_EXITING | VMX_CPU_BASED_USE_IO_BITMAPS |
              VMX_CPU_BASED_MONITOR_EXITING | VMX_CPU_BASED_PAUSE_EXITING,
         .xlevel = 0x80000008,
-        .model_id = "Common KVM processor"
+        .model_id = "Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz"
     },
     {
         .name = "qemu32",
@@ -3684,7 +3684,7 @@ static const X86CPUDefinition builtin_x86_defs[] = {
         .features[FEAT_1_ECX] =
             CPUID_EXT_SSE3,
         .xlevel = 0x80000004,
-        .model_id = "QEMU Virtual CPU version " QEMU_HW_VERSION,
+        .model_id = "Intel(R) Core(TM) i3-4130 CPU @ 3.40GHz",
     },
     {
         .name = "kvm32",
